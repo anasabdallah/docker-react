@@ -7,6 +7,7 @@ pipeline {
     stage('pre-build') {
       steps {
         git 'https://github.com/anasabdallah/docker-react'
+        sh 'pwd; ls'
       }
     }
     stage('build') {
